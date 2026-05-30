@@ -89,7 +89,7 @@ function Navbar({ route, navigate, dark = false, onOpenConsult }) {
 function Logo({ dark = false }) {
   return (
     <img
-      src="Фасад/logo.png"
+      src="images/logo.png"
       alt="МАНАС СТРОЙ"
       className="h-12 w-12 object-contain rounded-full"
       style={dark ? {} : { filter: 'drop-shadow(0 0 0px transparent)' }}
