@@ -219,7 +219,7 @@ function ProjectLightbox({ items, index, onClose, onPrev, onNext, onOpenConsult 
 
           <div className="mt-8 grid gap-2">
             <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Хочу такой же фасад</Button>
-            <Button href="https://wa.me/77027095654" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>Обсудить в WhatsApp</Button>
+            <Button href="https://wa.me/77716029494" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>Обсудить в WhatsApp</Button>
           </div>
         </div>
       </div>
