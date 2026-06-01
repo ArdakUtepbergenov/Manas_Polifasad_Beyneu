@@ -128,7 +128,7 @@ function MobileMenu({ open, onClose, route, navigate, onOpenConsult }) {
           <a href="https://wa.me/77027095654" className="flex items-center gap-2 hover:text-ink-900">
             <Icons.WhatsApp size={15}/> WhatsApp
           </a>
-          <a href="https://instagram.com" className="flex items-center gap-2 hover:text-ink-900">
+          <a href="https://www.instagram.com/manas_stroi_beyneu/" className="flex items-center gap-2 hover:text-ink-900">
             <Icons.Instagram size={15}/> Instagram
           </a>
         </div>
@@ -178,7 +178,7 @@ function Footer({ navigate, onOpenConsult }) {
             </p>
             <div className="mt-7 flex gap-3">
               <SocialLink href="https://wa.me/77027095654"     icon={<Icons.WhatsApp size={17}/>}/>
-              <SocialLink href="https://instagram.com"          icon={<Icons.Instagram size={17}/>}/>
+              <SocialLink href="https://www.instagram.com/manas_stroi_beyneu/"          icon={<Icons.Instagram size={17}/>}/>
               <SocialLink href="tel:+77027095654"               icon={<Icons.Phone size={17}/>}/>
               <SocialLink href="mailto:info@manasstroi.kz"    icon={<Icons.Mail size={17}/>}/>
             </div>
