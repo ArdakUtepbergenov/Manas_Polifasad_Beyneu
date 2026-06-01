@@ -55,9 +55,9 @@ function Navbar({ route, navigate, dark = false, onOpenConsult }) {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:+77027095654" className={`flex items-center gap-2 text-[14px] font-medium tracking-tight ${wantsDark ? 'text-white' : 'text-ink-900'}`}>
+            <a href="tel:+77716029494" className={`flex items-center gap-2 text-[14px] font-medium tracking-tight ${wantsDark ? 'text-white' : 'text-ink-900'}`}>
               <Icons.Phone size={16} />
-              <span>+7 702 709 56-54</span>
+              <span>+7 771 602 94-94</span>
             </a>
             <Button onClick={onOpenConsult} variant={wantsDark ? 'invert' : 'primary'} size="sm">
               Консультация
@@ -122,10 +122,10 @@ function MobileMenu({ open, onClose, route, navigate, onOpenConsult }) {
         </nav>
         <div className="mt-6 grid grid-cols-2 gap-3">
           <Button onClick={onOpenConsult} variant="primary" size="md">Консультация</Button>
-          <Button href="tel:+77027095654" as="a" variant="outline" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
+          <Button href="tel:+77716029494" as="a" variant="outline" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
         </div>
         <div className="mt-5 pt-5 border-t border-ink-100 grid grid-cols-2 gap-3 text-[13px] text-ink-500">
-          <a href="https://wa.me/77027095654" className="flex items-center gap-2 hover:text-ink-900">
+          <a href="https://wa.me/77716029494" className="flex items-center gap-2 hover:text-ink-900">
             <Icons.WhatsApp size={15}/> WhatsApp
           </a>
           <a href="https://www.instagram.com/manas_stroi_beyneu/" className="flex items-center gap-2 hover:text-ink-900">
@@ -154,14 +154,14 @@ function Footer({ navigate, onOpenConsult }) {
             </Reveal>
             <Reveal delay={160} className="mt-7 flex flex-wrap gap-3">
               <Button onClick={onOpenConsult} variant="invert" size="lg">Получить консультацию</Button>
-              <Button href="https://wa.me/77027095654" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
+              <Button href="https://wa.me/77716029494" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
             </Reveal>
           </div>
           <div className="lg:col-span-5 lg:pl-8 lg:border-l border-white/10 flex flex-col justify-end">
             <Reveal delay={200}>
               <div className="space-y-5">
                 <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="район Бейнеу, ул. Улица Майлина, 168" />
-                <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 702 709 56-54" href="tel:+77027095654"/>
+                <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 771 602 94-94" href="tel:+77716029494"/>
                 <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="info@manasstroi.kz" href="mailto:info@manasstroi.kz"/>
                 <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 18:00" />
               </div>
@@ -177,9 +177,9 @@ function Footer({ navigate, onOpenConsult }) {
               Архитектурное качество, гарантия год, собственная производственная площадка.
             </p>
             <div className="mt-7 flex gap-3">
-              <SocialLink href="https://wa.me/77027095654"     icon={<Icons.WhatsApp size={17}/>}/>
+              <SocialLink href="https://wa.me/77716029494"     icon={<Icons.WhatsApp size={17}/>}/>
               <SocialLink href="https://www.instagram.com/manas_stroi_beyneu/"          icon={<Icons.Instagram size={17}/>}/>
-              <SocialLink href="tel:+77027095654"               icon={<Icons.Phone size={17}/>}/>
+              <SocialLink href="tel:+77716029494"               icon={<Icons.Phone size={17}/>}/>
               <SocialLink href="mailto:info@manasstroi.kz"    icon={<Icons.Mail size={17}/>}/>
             </div>
           </div>
@@ -262,7 +262,7 @@ function FloatingWhatsApp() {
   }, []);
   return (
     <a
-      href="https://wa.me/77027095654"
+      href="https://wa.me/77716029494"
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed z-30 bottom-6 right-6 flex items-center gap-3 pl-3 pr-5 h-14 rounded-full bg-[#25D366] text-white shadow-[0_16px_40px_-8px_rgba(37,211,102,0.55)] hover:shadow-[0_20px_50px_-8px_rgba(37,211,102,0.7)] transition-all duration-500 ${show ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
