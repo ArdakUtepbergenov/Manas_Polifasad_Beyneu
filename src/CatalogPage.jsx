@@ -247,7 +247,7 @@ function ProductModal({ product, onClose, onOpenConsult }) {
             <div className="pt-8 border-t border-ink-100 flex items-end justify-end gap-6 flex-wrap">
               <div className="flex gap-2 flex-wrap">
                 <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Рассчитать стоимость</Button>
-                <Button href="https://wa.me/77027829474" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
+                <Button href="https://wa.me/77716029494" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
               </div>
             </div>
           </div>
