@@ -57,7 +57,7 @@ function Navbar({ route, navigate, dark = false, onOpenConsult }) {
           <div className="hidden lg:flex items-center gap-3">
             <a href="tel:+77027095654" className={`flex items-center gap-2 text-[14px] font-medium tracking-tight ${wantsDark ? 'text-white' : 'text-ink-900'}`}>
               <Icons.Phone size={16} />
-              <span>+7 (775) 028-03-03</span>
+              <span>+7 702 709 56-54</span>
             </a>
             <Button onClick={onOpenConsult} variant={wantsDark ? 'invert' : 'primary'} size="sm">
               Консультация
@@ -161,7 +161,7 @@ function Footer({ navigate, onOpenConsult }) {
             <Reveal delay={200}>
               <div className="space-y-5">
                 <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="район Бейнеу, ул. Улица Майлина, 168" />
-                <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 (775) 028-03-03" href="tel:+77027095654"/>
+                <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 702 709 56-54" href="tel:+77027095654"/>
                 <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="info@manasstroi.kz" href="mailto:info@manasstroi.kz"/>
                 <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 18:00" />
               </div>
