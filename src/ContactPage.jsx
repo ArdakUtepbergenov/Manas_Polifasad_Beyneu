@@ -1,6 +1,6 @@
 // Contact page — all CTAs route to WhatsApp. No forms.
 
-const WA_URL = 'https://wa.me/77027095654';
+const WA_URL = 'https://wa.me/77716029494';
 
 function ContactPage({ navigate, onOpenConsult }) {
   return (
@@ -57,7 +57,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <span className="h-11 w-11 rounded-full bg-[#25D366] text-white flex items-center justify-center">
                       <Icons.WhatsApp size={20}/>
                     </span>
-                    <span className="display text-[22px] font-medium tracking-tight">+7 702 709 56-54</span>
+                    <span className="display text-[22px] font-medium tracking-tight">+7 771 602 94-94</span>
                     <Icons.ArrowUpRight size={20} className="text-ink-400 group-hover:text-ink-900 transition-colors"/>
                   </div>
                 </div>
@@ -85,9 +85,9 @@ function ContactPage({ navigate, onOpenConsult }) {
             <ContactCard
               icon={<Icons.Phone size={22}/>}
               label="ТЕЛЕФОН"
-              value="+7 702 709 56-54"
+              value="+7 771 602 94-94"
               hint="Ежедневно 09:00 — 21:00"
-              href="tel:+77027095654"
+              href="tel:+77716029494"
             />
             <ContactCard
               icon={<Icons.Mail size={22}/>}
@@ -124,11 +124,11 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="район Бейнеу, ул. Улица Майлина, 168"/>
                     <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="район Бейнеу, ул. Улица Майлина, 168"/>
                     <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 18:00"/>
-                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 709 56-54"/>
+                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 771 602 94-94"/>
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">
                     <Button href={WA_URL} as="a" variant="whatsapp" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
-                    <Button href="tel:+77027095654" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
+                    <Button href="tel:+77716029494" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <Icons.WhatsApp size={14}/> Написать
                   </a>
                   <span className="text-ink-200">·</span>
-                  <a href="tel:+77027095654" className="text-accent hover:text-accent-dark">+7 702 709 56-54</a>
+                  <a href="tel:+77716029494" className="text-accent hover:text-accent-dark">+7 771 602 94-94</a>
                 </div>
               </div>
             </div>
