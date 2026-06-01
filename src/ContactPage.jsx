@@ -1,6 +1,6 @@
 // Contact page — all CTAs route to WhatsApp. No forms.
 
-const WA_URL = 'https://wa.me/77027829474';
+const WA_URL = 'https://wa.me/77750280303';
 
 function ContactPage({ navigate, onOpenConsult }) {
   return (
@@ -87,7 +87,7 @@ function ContactPage({ navigate, onOpenConsult }) {
               label="ТЕЛЕФОН"
               value="+7 702 782 94 74"
               hint="Ежедневно 09:00 — 21:00"
-              href="tel:+77027829474"
+              href="tel:+77750280303"
             />
             <ContactCard
               icon={<Icons.Mail size={22}/>}
@@ -129,7 +129,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">
                     <Button href={WA_URL} as="a" variant="whatsapp" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
-                    <Button href="tel:+77027829474" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
+                    <Button href="tel:+77750280303" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <Icons.WhatsApp size={14}/> Написать
                   </a>
                   <span className="text-ink-200">·</span>
-                  <a href="tel:+77027829474" className="text-accent hover:text-accent-dark">+7 702 782 94 74</a>
+                  <a href="tel:+77750280303" className="text-accent hover:text-accent-dark">+7 775 028 03-03</a>
                 </div>
               </div>
             </div>

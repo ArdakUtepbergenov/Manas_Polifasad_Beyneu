@@ -73,7 +73,7 @@ function Hero({ onOpenConsult, navigate }) {
             <div className="mt-10 flex flex-wrap gap-3">
               <Button onClick={onOpenConsult} variant="invert" size="lg">Получить консультацию</Button>
               <Button onClick={onOpenConsult} variant="outlineDark" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
-              <Button href="https://wa.me/77027829474" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
+              <Button href="https://wa.me/77750280303" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
               <Button onClick={() => navigate('catalog')} variant="ghost" size="lg" className="text-white hover:bg-white/10" iconAfter={null}>Смотреть каталог</Button>
             </div>
           </Reveal>
@@ -82,7 +82,7 @@ function Hero({ onOpenConsult, navigate }) {
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
           <div className="grid grid-cols-3 gap-8 md:gap-14">
             {[
-              { v: '340+', l: 'объектов сдано' },
+              { v: '5000+', l: 'объектов сдано' },
               { v: '1',   l: 'год гарантии' },
               { v: '8',   l: 'лет на рынке' },
             ].map((s, i) => (
@@ -114,7 +114,7 @@ function TrustStrip() {
     'Гарантия год',
     'Собственное производство',
     'ISO 9001:2015',
-    '340+ сданных объектов',
+    '5000+ сданных объектов',
   ];
   return (
     <section className="bg-white py-8 border-b border-ink-100">
@@ -178,7 +178,7 @@ function FeaturedProjectsSection({ navigate }) {
           eyebrow="ИЗБРАННЫЕ ПРОЕКТЫ"
           title="Каталог наших фасадов"
           lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в Атырау."
-          cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Все проекты — 340+</Button>}
+          cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Все проекты — 5000+</Button>}
         />
         <div className="mt-16 md:mt-20 grid md:grid-cols-12 gap-6 md:gap-8">
           <Reveal className="md:col-span-7">
@@ -470,7 +470,7 @@ function MapSection() {
             <Reveal><Eyebrow className="mb-5">ГЕОГРАФИЯ ПРОЕКТОВ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(34px,5vw,64px)] font-medium leading-[0.98] tracking-tightest">
-                340+ фасадов<br/>по всему Атырау
+                5000+ фасадов<br/>по всему Атырау
               </h2>
             </Reveal>
           </div>
@@ -563,7 +563,7 @@ function FinalCTASection({ onOpenConsult }) {
             <Reveal delay={240}>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Button onClick={onOpenConsult} variant="invert" size="lg">Вызвать замерщика</Button>
-                <Button href="https://wa.me/77027829474" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
+                <Button href="https://wa.me/77750280303" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
               </div>
             </Reveal>
             <Reveal delay={320}>

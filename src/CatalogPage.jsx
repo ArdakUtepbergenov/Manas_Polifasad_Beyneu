@@ -279,7 +279,7 @@ function CatalogCTA({ onOpenConsult }) {
           <div className="lg:col-span-5 flex flex-col gap-3">
             <Button onClick={onOpenConsult} variant="primary" size="lg">Получить консультацию</Button>
             <Button onClick={onOpenConsult} variant="outline" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
-            <Button href="https://wa.me/77027829474" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>Написать в WhatsApp</Button>
+            <Button href="https://wa.me/77750280303" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>Написать в WhatsApp</Button>
           </div>
         </Card>
       </Container>

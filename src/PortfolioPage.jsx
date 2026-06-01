@@ -23,7 +23,7 @@ function PortfolioPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-8">
-              <Reveal><Eyebrow className="mb-5">ПОРТФОЛИО · 340+ ОБЪЕКТОВ</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-5">ПОРТФОЛИО · 5000+ ОБЪЕКТОВ</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h1 className="display text-[clamp(48px,7.6vw,128px)] font-medium leading-[0.94] tracking-tightest">
                   Завершённые<br/><span className="text-gold italic font-light">фасады</span>
@@ -219,7 +219,7 @@ function ProjectLightbox({ items, index, onClose, onPrev, onNext, onOpenConsult 
 
           <div className="mt-8 grid gap-2">
             <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Хочу такой же фасад</Button>
-            <Button href="https://wa.me/77027829474" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>Обсудить в WhatsApp</Button>
+            <Button href="https://wa.me/77750280303" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>Обсудить в WhatsApp</Button>
           </div>
         </div>
       </div>
