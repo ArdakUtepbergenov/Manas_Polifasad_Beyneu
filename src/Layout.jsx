@@ -160,7 +160,7 @@ function Footer({ navigate, onOpenConsult }) {
           <div className="lg:col-span-5 lg:pl-8 lg:border-l border-white/10 flex flex-col justify-end">
             <Reveal delay={200}>
               <div className="space-y-5">
-                <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="г. Атырау, ул. Сырым Датова 99а" />
+                <FooterContact icon={<Icons.MapPin size={18}/>}  label="Адрес"   value="район Бейнеу, ул. Улица Майлина, 168" />
                 <FooterContact icon={<Icons.Phone size={18}/>}   label="Телефон" value="+7 (775) 028-03-03" href="tel:+77027095654"/>
                 <FooterContact icon={<Icons.Mail size={18}/>}    label="Почта"   value="info@manasstroi.kz" href="mailto:info@manasstroi.kz"/>
                 <FooterContact icon={<Icons.Clock size={18}/>}   label="Часы"    value="Пн–Сб 09:00 — 18:00" />
