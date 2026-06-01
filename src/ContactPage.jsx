@@ -99,8 +99,8 @@ function ContactPage({ navigate, onOpenConsult }) {
             <ContactCard
               icon={<Icons.Instagram size={22}/>}
               label="INSTAGRAM"
-              value="@manas_stroi"
-              href="https://instagram.com/manas_stroi/"
+              value="@manas_stroi_beyneu"
+              href="https://www.instagram.com/manas_stroi_beyneu/"
             />
           </div>
         </Container>
