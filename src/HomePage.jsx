@@ -43,7 +43,7 @@ function Hero({ onOpenConsult, navigate }) {
             <span className="mx-3 text-white/20">/</span>
             <span className="text-white/40">E 51° 55'</span>
             <span className="mx-3 text-white/20">·</span>
-            <span>Атырау, Казахстан</span>
+            <span>район Бейнеу, Казахстан</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <span className="text-white/40">2013 — 2026</span>
@@ -66,7 +66,7 @@ function Hero({ onOpenConsult, navigate }) {
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-8 max-w-xl text-[17px] md:text-[19px] leading-[1.55] text-white/75">
-              Производим и монтируем премиальные фасадные системы для частных домов, коттеджей, ресторанов и коммерческих зданий в Атырау. Архитектурное качество, гарантия год.
+              Производим и монтируем премиальные фасадные системы для частных домов, коттеджей, ресторанов и коммерческих зданий в район Бейнеу. Архитектурное качество, гарантия год.
             </p>
           </Reveal>
           <Reveal delay={260}>
@@ -177,7 +177,7 @@ function FeaturedProjectsSection({ navigate }) {
           align="split"
           eyebrow="ИЗБРАННЫЕ ПРОЕКТЫ"
           title="Каталог наших фасадов"
-          lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в Атырау."
+          lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в район Бейнеу."
           cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Все проекты — 5000+</Button>}
         />
         <div className="mt-16 md:mt-20 grid md:grid-cols-12 gap-6 md:gap-8">
@@ -470,7 +470,7 @@ function MapSection() {
             <Reveal><Eyebrow className="mb-5">ГЕОГРАФИЯ ПРОЕКТОВ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(34px,5vw,64px)] font-medium leading-[0.98] tracking-tightest">
-                5000+ фасадов<br/>по всему Атырау
+                5000+ фасадов<br/>по всему район Бейнеу
               </h2>
             </Reveal>
           </div>
@@ -528,7 +528,7 @@ function MapSection() {
               <div className="flex items-center gap-2 mt-2"><span className="h-1 w-5 bg-accent"/> р. Урал</div>
             </div>
             <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur border border-ink-200 rounded-2xl px-5 py-3 text-[12px] font-mono uppercase tracking-wider text-ink-600">
-              г. АТЫРАУ · масштаб 1:25 000
+              район Бейнеу · масштаб 1:25 000
             </div>
           </div>
         </Reveal>
