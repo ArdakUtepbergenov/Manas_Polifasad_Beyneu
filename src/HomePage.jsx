@@ -73,7 +73,7 @@ function Hero({ onOpenConsult, navigate }) {
             <div className="mt-10 flex flex-wrap gap-3">
               <Button onClick={onOpenConsult} variant="invert" size="lg">Получить консультацию</Button>
               <Button onClick={onOpenConsult} variant="outlineDark" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
-              <Button href="https://wa.me/77027095654" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
+              <Button href="https://wa.me/77716029494" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
               <Button onClick={() => navigate('catalog')} variant="ghost" size="lg" className="text-white hover:bg-white/10" iconAfter={null}>Смотреть каталог</Button>
             </div>
           </Reveal>
@@ -563,7 +563,7 @@ function FinalCTASection({ onOpenConsult }) {
             <Reveal delay={240}>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Button onClick={onOpenConsult} variant="invert" size="lg">Вызвать замерщика</Button>
-                <Button href="https://wa.me/77027095654" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
+                <Button href="https://wa.me/77716029494" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
               </div>
             </Reveal>
             <Reveal delay={320}>
