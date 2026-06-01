@@ -424,11 +424,11 @@ function InstagramSection() {
       <Container size="wide">
         <SectionHeader
           align="split"
-          eyebrow="@МАНАССТРОЙ · INSTAGRAM"
+          eyebrow="@МАНАССТРОЙБЕЙНЕУ"
           title={<>Хроника наших<br/>фасадов</>}
           lead="Каждую неделю показываем процесс с объектов, детали монтажа и архитектурную съёмку завершённых работ."
           cta={
-            <a href="https://instagram.com" className="inline-flex items-center gap-3 text-[14px] font-medium tracking-tight hover:text-accent transition-colors">
+            <a href="https://www.instagram.com/manas_stroi_beyneu/" className="inline-flex items-center gap-3 text-[14px] font-medium tracking-tight hover:text-accent transition-colors">
               <Icons.Instagram size={18}/> Подписаться · 12.4K
               <Icons.ArrowUpRight size={16}/>
             </a>
