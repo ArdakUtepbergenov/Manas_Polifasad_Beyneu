@@ -57,7 +57,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <span className="h-11 w-11 rounded-full bg-[#25D366] text-white flex items-center justify-center">
                       <Icons.WhatsApp size={20}/>
                     </span>
-                    <span className="display text-[22px] font-medium tracking-tight">+7 702 782 94 74</span>
+                    <span className="display text-[22px] font-medium tracking-tight">+7 775 028 03 03</span>
                     <Icons.ArrowUpRight size={20} className="text-ink-400 group-hover:text-ink-900 transition-colors"/>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ function ContactPage({ navigate, onOpenConsult }) {
             <ContactCard
               icon={<Icons.Phone size={22}/>}
               label="ТЕЛЕФОН"
-              value="+7 702 782 94 74"
+              value="+7 775 028 03 03"
               hint="Ежедневно 09:00 — 21:00"
               href="tel:+77027095654"
             />
@@ -125,7 +125,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="г. Атырау, ул. Сырым Датова 99а"/>
                     <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="г. Атырау, ул. Сырым Датова 99а"/>
                     <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 18:00"/>
-                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 782 94 74"/>
+                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 775 028 03 03"/>
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">
                     <Button href={WA_URL} as="a" variant="whatsapp" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
