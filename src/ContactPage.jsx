@@ -57,7 +57,7 @@ function ContactPage({ navigate, onOpenConsult }) {
                     <span className="h-11 w-11 rounded-full bg-[#25D366] text-white flex items-center justify-center">
                       <Icons.WhatsApp size={20}/>
                     </span>
-                    <span className="display text-[22px] font-medium tracking-tight">+7 702 214 06 06</span>
+                    <span className="display text-[22px] font-medium tracking-tight">+7 702 709 56-54</span>
                     <Icons.ArrowUpRight size={20} className="text-ink-400 group-hover:text-ink-900 transition-colors"/>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ function ContactPage({ navigate, onOpenConsult }) {
             <ContactCard
               icon={<Icons.Phone size={22}/>}
               label="ТЕЛЕФОН"
-              value="+7 702 214 06 06"
+              value="+7 702 709 56-54"
               hint="Ежедневно 09:00 — 21:00"
               href="tel:+77027095654"
             />
@@ -119,13 +119,13 @@ function ContactPage({ navigate, onOpenConsult }) {
                 <div className="p-8 md:p-10 flex-1 flex flex-col">
                   <Eyebrow dark className="mb-4">ОФИС И ПРОИЗВОДСТВО</Eyebrow>
                   <h3 className="display text-[28px] md:text-[32px] font-medium tracking-tight leading-tight mb-6">
-                    Атырау, ул. Сырым Датова 99а
+                    Бейнеу, ул. Улица Майлина, 168
                   </h3>
                   <div className="space-y-5 text-[14.5px]">
-                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="г. Атырау, ул. Сырым Датова 99а"/>
-                    <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="г. Атырау, ул. Сырым Датова 99а"/>
+                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="район Бейнеу, ул. Улица Майлина, 168"/>
+                    <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="район Бейнеу, ул. Улица Майлина, 168"/>
                     <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 18:00"/>
-                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 214 06 06"/>
+                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 702 709 56-54"/>
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">
                     <Button href={WA_URL} as="a" variant="whatsapp" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
@@ -138,7 +138,7 @@ function ContactPage({ navigate, onOpenConsult }) {
             <Reveal className="lg:col-span-7" delay={120}>
               <div className="h-full flex flex-col gap-4 md:gap-6">
                 <ServiceRow number="01" title="Получить консультацию" text="Архитектор студии ответит на вопросы по фасадным системам, материалам и срокам." cta="Написать в WhatsApp"/>
-                <ServiceRow number="02" title="Вызвать замерщика"     text="Бесплатный выезд по Атырау. Замер фасада, фотофиксация и обсуждение материалов на объекте." cta="Написать в WhatsApp"/>
+                <ServiceRow number="02" title="Вызвать замерщика"     text="Бесплатный выезд по Бейнеу. Замер фасада, фотофиксация и обсуждение материалов на объекте." cta="Написать в WhatsApp"/>
                 <ServiceRow number="03" title="Рассчитать стоимость"  text="Прозрачная смета с детализацией по материалам и работам в течение 3 рабочих дней." cta="Написать в WhatsApp"/>
                 <ServiceRow number="04" title="Проект фасада"         text="Архитектурный проект с визуализацией и подбором материалов. От 7 рабочих дней." cta="Написать в WhatsApp"/>
               </div>
@@ -156,7 +156,7 @@ function ContactPage({ navigate, onOpenConsult }) {
               <div className="absolute top-6 left-6 bg-white rounded-2xl border border-ink-200 shadow-soft p-5 max-w-xs">
                 <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">МЫ ЗДЕСЬ</div>
                 <div className="display text-[18px] font-medium mb-1">Манас Строй</div>
-                <div className="text-[13px] text-ink-500 leading-relaxed">ул. Сырым Датова 99а<br/>г. Атырау, Казахстан</div>
+                <div className="text-[13px] text-ink-500 leading-relaxed">ул. Улица Майлина, 168<br/>район Бейнеу, Казахстан</div>
                 <div className="mt-3 pt-3 border-t border-ink-100 flex items-center gap-3 text-[13px]">
                   <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline flex items-center gap-1.5">
                     <Icons.WhatsApp size={14}/> Написать
@@ -175,7 +175,7 @@ function ContactPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid md:grid-cols-3 gap-8">
             <QuickInfo icon="Clock"  title="Среднее время ответа"  text="7 минут в рабочее время. Сообщения вне часов обрабатываются с 09:00."/>
-            <QuickInfo icon="Ruler"  title="Замер фасада"           text="Бесплатно в Атырау. Для объектов от 200 м² — выезд по Атырауской области."/>
+            <QuickInfo icon="Ruler"  title="Замер фасада"           text="Бесплатно в Бейнеу. Для объектов от 200 м² — выезд по Бейнеуской области."/>
             <QuickInfo icon="Shield" title="Без обязательств"       text="Консультация и расчёт стоимости не накладывают финансовых обязательств."/>
           </div>
         </Container>
