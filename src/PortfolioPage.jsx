@@ -23,17 +23,17 @@ function PortfolioPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-8">
-              <Reveal><Eyebrow className="mb-5">ПОРТФОЛИО · 5000+ ОБЪЕКТОВ</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-5">ПОРТФОЛИО · 5000+ НЫСАН</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h1 className="display text-[clamp(48px,7.6vw,128px)] font-medium leading-[0.94] tracking-tightest">
-                  Завершённые<br/><span className="text-gold italic font-light">фасады</span>
+                  Аяқталған<br/><span className="text-gold italic font-light">фасадтар</span>
                 </h1>
               </Reveal>
             </div>
             <div className="lg:col-span-4">
               <Reveal delay={140}>
                 <p className="text-[16px] leading-[1.65] text-ink-500">
-                  Архивный набор проектов студии с 2013 года. Архитектурная фотосъёмка, описания материалов и истории каждого объекта.
+                  2013 жылдан бастап студияның архивтік жоба жинағы. Сәулеттік фотосурет, материалдар сипаттамасы және әр нысанның тарихы.
                 </p>
               </Reveal>
             </div>
@@ -45,7 +45,7 @@ function PortfolioPage({ navigate, onOpenConsult }) {
       <div className="md:sticky md:top-[84px] z-20 glass border-b border-ink-100">
         <Container size="wide" className="py-4 flex flex-wrap items-center gap-3 md:gap-5">
           <div className="flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.16em] text-ink-500">
-            <Icons.Filter size={14}/> Тип
+            <Icons.Filter size={14}/> Түрі
           </div>
           <div className="flex flex-wrap gap-2">
             {PROJECT_TYPES.map(t => (
@@ -54,15 +54,15 @@ function PortfolioPage({ navigate, onOpenConsult }) {
           </div>
           <div className="hidden md:block h-6 w-px bg-ink-200 mx-2"/>
           <div className="flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.16em] text-ink-500">
-            <Icons.Calendar size={14}/> Год
+            <Icons.Calendar size={14}/> Жыл
           </div>
           <div className="flex flex-wrap gap-2">
             {years.map(y => (
-              <Pill key={y} active={year === y} onClick={() => setYear(y)}>{y === 'all' ? 'Все годы' : y}</Pill>
+              <Pill key={y} active={year === y} onClick={() => setYear(y)}>{y === 'all' ? 'Барлық жылдар' : y}</Pill>
             ))}
           </div>
           <div className="ml-auto text-[13px] text-ink-500">
-            <span className="text-ink-900 font-medium">{items.length}</span> {items.length === 1 ? 'проект' : 'проектов'}
+            <span className="text-ink-900 font-medium">{items.length}</span> жоба
           </div>
         </Container>
       </div>
@@ -72,8 +72,8 @@ function PortfolioPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           {items.length === 0 ? (
             <div className="py-32 text-center">
-              <p className="display text-2xl font-medium mb-3">Проекты не найдены</p>
-              <Button onClick={() => { setType('all'); setYear('all'); }} variant="primary" size="md">Сбросить фильтры</Button>
+              <p className="display text-2xl font-medium mb-3">Жобалар табылмады</p>
+              <Button onClick={() => { setType('all'); setYear('all'); }} variant="primary" size="md">Сүзгілерді тазалау</Button>
             </div>
           ) : (
             <div className="masonry">
@@ -93,16 +93,16 @@ function PortfolioPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <Card className="p-10 md:p-16 grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7">
-              <Reveal><Eyebrow className="mb-5">ВАШ ПРОЕКТ — СЛЕДУЮЩИЙ</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-5">СІЗДІҢ ЖОБАҢЫЗ — КЕЛЕСІ</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h3 className="display text-[clamp(28px,4vw,48px)] font-medium leading-tight tracking-tight">
-                  Добавим ваш фасад в эту<br/>галерею в этом году.
+                  Бұл жылы сіздің фасадыңызды<br/>осы галереяға қосамыз.
                 </h3>
               </Reveal>
             </div>
             <div className="lg:col-span-5 flex flex-col gap-3">
-              <Button onClick={onOpenConsult} variant="primary" size="lg">Обсудить проект</Button>
-              <Button onClick={onOpenConsult} variant="outline" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
+              <Button onClick={onOpenConsult} variant="primary" size="lg">Жобаны талқылау</Button>
+              <Button onClick={onOpenConsult} variant="outline" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Өлшеуші шақыру</Button>
             </div>
           </Card>
         </Container>
@@ -198,11 +198,11 @@ function ProjectLightbox({ items, index, onClose, onPrev, onNext, onOpenConsult 
 
           <div className="space-y-px bg-ink-100 border border-ink-100 rounded-2xl overflow-hidden">
             {[
-              { label: 'Локация',        value: p.location, icon: 'MapPin' },
-              { label: 'Тип объекта',    value: p.typeLabel, icon: 'Building' },
-              { label: 'Площадь фасада', value: p.area, icon: 'Ruler' },
-              { label: 'Материалы',      value: p.material, icon: 'Layers' },
-              { label: 'Завершено',      value: p.year, icon: 'Calendar' },
+              { label: 'Орналасқан жері', value: p.location, icon: 'MapPin' },
+              { label: 'Нысан түрі',     value: p.typeLabel, icon: 'Building' },
+              { label: 'Фасад ауданы',   value: p.area, icon: 'Ruler' },
+              { label: 'Материалдар',    value: p.material, icon: 'Layers' },
+              { label: 'Аяқталды',       value: p.year, icon: 'Calendar' },
             ].map((s, i) => {
               const Ic = Icons[s.icon];
               return (
@@ -218,8 +218,8 @@ function ProjectLightbox({ items, index, onClose, onPrev, onNext, onOpenConsult 
           </div>
 
           <div className="mt-8 grid gap-2">
-            <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Хочу такой же фасад</Button>
-            <Button href="https://wa.me/77716029494" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>Обсудить в WhatsApp</Button>
+            <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Мұндай фасад қалаймын</Button>
+            <Button href="https://wa.me/77716029494" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp-та талқылау</Button>
           </div>
         </div>
       </div>

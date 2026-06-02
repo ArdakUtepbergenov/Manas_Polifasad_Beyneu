@@ -43,11 +43,11 @@ function Hero({ onOpenConsult, navigate }) {
             <span className="mx-3 text-white/20">/</span>
             <span className="text-white/40">E 51° 55'</span>
             <span className="mx-3 text-white/20">·</span>
-            <span>район Бейнеу, Казахстан</span>
+            <span>Бейнеу ауданы, Қазақстан</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <span className="text-white/40">2013 — 2026</span>
-            <span className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"/> В работе 14 объектов</span>
+            <span className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"/> Жұмыста 14 нысан</span>
           </div>
         </div>
 
@@ -55,26 +55,26 @@ function Hero({ onOpenConsult, navigate }) {
           <Reveal>
             <div className="eyebrow text-white/60 mb-7">
               <span className="h-px w-10 bg-white/40 inline-block align-middle mr-3"/>
-              ПОЛИФАСАДНЫЕ СИСТЕМЫ · АРХИТЕКТУРНЫЙ МОНТАЖ
+              ПОЛИФАСАДТЫҚ ЖҮЙЕЛЕР · СӘУЛЕТТІК ОРНАТУ
             </div>
           </Reveal>
           <Reveal delay={80}>
             <h1 className="display font-medium text-[clamp(48px,8.2vw,148px)] leading-[0.92] tracking-tightest text-white">
-              Фасад, который<br/>
-              <span className="text-gold-light italic font-light">остаётся</span> в памяти.
+              Жадта<br/>
+              <span className="text-gold-light italic font-light">қалатын</span> фасад.
             </h1>
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-8 max-w-xl text-[17px] md:text-[19px] leading-[1.55] text-white/75">
-              Производим и монтируем премиальные фасадные системы для частных домов, коттеджей, ресторанов и коммерческих зданий в район Бейнеу. Архитектурное качество, гарантия год.
+              Бейнеу ауданындағы жеке үйлер, коттедждер, мейрамханалар мен коммерциялық ғимараттар үшін премиум фасадтық жүйелерді өндіреміз және орнатамыз. Сәулеттік сапа, жыл кепілдігі.
             </p>
           </Reveal>
           <Reveal delay={260}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Button onClick={onOpenConsult} variant="invert" size="lg">Получить консультацию</Button>
-              <Button onClick={onOpenConsult} variant="outlineDark" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
+              <Button onClick={onOpenConsult} variant="invert" size="lg">Кеңес алу</Button>
+              <Button onClick={onOpenConsult} variant="outlineDark" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Өлшеуші шақыру</Button>
               <Button href="https://wa.me/77716029494" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
-              <Button onClick={() => navigate('catalog')} variant="ghost" size="lg" className="text-white hover:bg-white/10" iconAfter={null}>Смотреть каталог</Button>
+              <Button onClick={() => navigate('catalog')} variant="ghost" size="lg" className="text-white hover:bg-white/10" iconAfter={null}>Каталогты көру</Button>
             </div>
           </Reveal>
         </div>
@@ -82,9 +82,9 @@ function Hero({ onOpenConsult, navigate }) {
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
           <div className="grid grid-cols-3 gap-8 md:gap-14">
             {[
-              { v: '5000+', l: 'объектов сдано' },
-              { v: '1',   l: 'год гарантии' },
-              { v: '8',   l: 'лет на рынке' },
+              { v: '5000+', l: 'нысан тапсырылды' },
+              { v: '1',     l: 'жыл кепілдік' },
+              { v: '8',     l: 'жыл нарықта' },
             ].map((s, i) => (
               <Reveal key={i} delay={320 + i * 80}>
                 <div>
@@ -96,7 +96,7 @@ function Hero({ onOpenConsult, navigate }) {
           </div>
           <Reveal delay={500}>
             <div className="flex items-center gap-3 text-[12px] font-mono uppercase tracking-[0.18em] text-white/50">
-              <span>прокрутите вниз</span>
+              <span>төмен айналдырыңыз</span>
               <span className="block h-12 w-px bg-gradient-to-b from-white/40 to-transparent"/>
             </div>
           </Reveal>
@@ -109,12 +109,12 @@ function Hero({ onOpenConsult, navigate }) {
 // ---------- Trust strip ----------
 function TrustStrip() {
   const labels = [
-    'TÜV-сертифицированные материалы',
-    'Член ассоциации строителей Казахстана',
-    'Гарантия год',
-    'Собственное производство',
+    'TÜV сертификатталған материалдар',
+    'Қазақстан құрылысшылар қауымдастығының мүшесі',
+    'Жыл кепілдігі',
+    'Өзіндік өндіріс',
     'ISO 9001:2015',
-    '5000+ сданных объектов',
+    '5000+ тапсырылған нысан',
   ];
   return (
     <section className="bg-white py-8 border-b border-ink-100">
@@ -138,9 +138,9 @@ function AdvantagesSection() {
       <Container size="wide">
         <SectionHeader
           align="split"
-          eyebrow="ПОЧЕМУ МАНАС СТРОЙ"
-          title={<>Шесть причин выбрать<br/>архитектурный подход</>}
-          lead="Мы не просто закрываем стену материалом. Мы проектируем фасад как часть архитектурной композиции — с расчётом теплотехники, инсоляции и долговечности на десятилетия вперёд."
+          eyebrow="НЕЛІКТЕН МАНАС СТРОЙ"
+          title={<>Сәулеттік тәсілді таңдаудың<br/>алты себебі</>}
+          lead="Біз қабырғаны материалмен жабып қана қоймаймыз. Фасадты сәулеттік композицияның бір бөлігі ретінде жобалаймыз — ондаған жылға алдыға жылутехника, инсоляция және беріктілікті есептеумен."
         />
         <div className="mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink-100 border border-ink-100 rounded-3xl overflow-hidden">
           {ADVANTAGES.map((a, i) => {
@@ -175,10 +175,10 @@ function FeaturedProjectsSection({ navigate }) {
       <Container size="wide">
         <SectionHeader
           align="split"
-          eyebrow="ИЗБРАННЫЕ ПРОЕКТЫ"
-          title="Каталог наших фасадов"
-          lead="Каждый объект — индивидуальное проектное решение. Ниже несколько работ последних лет в район Бейнеу."
-          cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Все проекты — 5000+</Button>}
+          eyebrow="ТАҢДАУЛЫ ЖОБАЛАР"
+          title="Біздің фасадтар каталогы"
+          lead="Әр нысан — жеке жобалық шешім. Төменде Бейнеу ауданындағы соңғы жылдардың бірнеше жұмысы."
+          cta={<Button onClick={() => navigate('portfolio')} variant="outline" size="md" iconAfter={null}>Барлық жобалар — 5000+</Button>}
         />
         <div className="mt-16 md:mt-20 grid md:grid-cols-12 gap-6 md:gap-8">
           <Reveal className="md:col-span-7">
@@ -237,10 +237,10 @@ function StatsSection() {
       <Container size="wide" className="relative">
         <div className="grid lg:grid-cols-12 gap-10 mb-16">
           <div className="lg:col-span-7">
-            <Reveal><Eyebrow dark className="mb-5">ЦИФРЫ</Eyebrow></Reveal>
+            <Reveal><Eyebrow dark className="mb-5">САНДАР</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-white text-[clamp(36px,5.4vw,72px)] font-medium leading-[0.96] tracking-tightest">
-                Восемь лет<br/>в одной дисциплине —<br/><span className="text-gold-light italic font-light">фасады.</span>
+                Сегіз жыл<br/>бір пәнде —<br/><span className="text-gold-light italic font-light">фасадтар.</span>
               </h2>
             </Reveal>
           </div>
@@ -271,10 +271,10 @@ function ProcessSection({ onOpenConsult }) {
       <Container size="wide">
         <SectionHeader
           align="split"
-          eyebrow="КАК МЫ РАБОТАЕМ"
-          title={<>Прозрачный процесс<br/>от заявки до гарантии</>}
-          lead="Каждый этап фиксируется в договоре с конкретными сроками. Вы всегда знаете, что происходит на объекте."
-          cta={<Button onClick={onOpenConsult} variant="primary" size="md">Начать с консультации</Button>}
+          eyebrow="БІЗ ҚАЛАЙ ЖҰМЫС ЖАСАЙМЫЗ"
+          title={<>Өтінімнен кепілдікке дейін<br/>мөлдір процесс</>}
+          lead="Әр кезең нақты мерзімдермен шартта бекітіледі. Нысанда не болып жатқанын әрқашан білесіз."
+          cta={<Button onClick={onOpenConsult} variant="primary" size="md">Кеңестен бастау</Button>}
         />
         <div className="mt-16 md:mt-24 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7 order-2 lg:order-1">
@@ -299,11 +299,11 @@ function ProcessSection({ onOpenConsult }) {
           <div className="lg:col-span-5 order-1 lg:order-2">
             <Reveal>
               <Card className="p-8 md:p-10 sticky top-28">
-                <div className="font-mono text-[12px] tracking-[0.18em] text-accent mb-3">ЭТАП {PROCESS[active].step}</div>
+                <div className="font-mono text-[12px] tracking-[0.18em] text-accent mb-3">КЕЗЕҢ {PROCESS[active].step}</div>
                 <h3 className="display text-[34px] font-medium leading-tight mb-5 tracking-tight">{PROCESS[active].title}</h3>
                 <p className="text-[15.5px] leading-[1.7] text-ink-500 mb-7">{PROCESS[active].text}</p>
                 <div className="space-y-3 pt-6 border-t border-ink-100">
-                  {['Закрепляем сроки', 'Фотофиксация', 'Прозрачная смета'].map((t, i) => (
+                  {['Мерзімдерді бекітеміз', 'Фотофиксация', 'Мөлдір смета'].map((t, i) => (
                     <div key={i} className="flex items-center gap-3 text-[14px] text-ink-600">
                       <span className="h-5 w-5 rounded-full bg-ink-900 text-white flex items-center justify-center"><Icons.Check size={11} strokeWidth={2.5}/></span>
                       {t}
@@ -326,9 +326,9 @@ function TestimonialsSection() {
   return (
     <Section className="py-28 md:py-40">
       <Container size="tight">
-        <Reveal><div className="text-center"><Eyebrow className="justify-center mb-5">ОТЗЫВЫ</Eyebrow></div></Reveal>
+        <Reveal><div className="text-center"><Eyebrow className="justify-center mb-5">ПІКІРЛЕР</Eyebrow></div></Reveal>
         <Reveal delay={80}>
-          <h2 className="display text-center text-[clamp(34px,5vw,60px)] font-medium leading-[0.98] tracking-tightest">Что говорят клиенты</h2>
+          <h2 className="display text-center text-[clamp(34px,5vw,60px)] font-medium leading-[0.98] tracking-tightest">Клиенттер не айтады</h2>
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-16 relative">
@@ -371,15 +371,15 @@ function FAQSection() {
       <Container size="wide">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           <div className="lg:col-span-4">
-            <Reveal><Eyebrow className="mb-5">ВОПРОСЫ</Eyebrow></Reveal>
+            <Reveal><Eyebrow className="mb-5">СҰРАҚТАР</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(34px,4.4vw,56px)] font-medium leading-[0.98] tracking-tightest">
-                Часто<br/>спрашивают
+                Жиі<br/>сұрайды
               </h2>
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-6 text-[15.5px] leading-[1.65] text-ink-500">
-                Не нашли ответ? Напишите в WhatsApp или закажите звонок — архитектор студии перезвонит в течение 15 минут.
+                Жауап таппадыңыз ба? WhatsApp-қа жазыңыз немесе қоңырау тапсырыңыз — студия сәулетшісі 15 минут ішінде қайта шалады.
               </p>
             </Reveal>
           </div>
@@ -425,11 +425,11 @@ function InstagramSection() {
         <SectionHeader
           align="split"
           eyebrow="@МАНАССТРОЙБЕЙНЕУ"
-          title={<>Хроника наших<br/>фасадов</>}
-          lead="Каждую неделю показываем процесс с объектов, детали монтажа и архитектурную съёмку завершённых работ."
+          title={<>Біздің<br/>фасадтар хроникасы</>}
+          lead="Әр аптада нысандардағы процесті, орнату бөлшектерін және аяқталған жұмыстардың сәулеттік суреттерін көрсетеміз."
           cta={
             <a href="https://www.instagram.com/manas_stroi_beyneu/" className="inline-flex items-center gap-3 text-[14px] font-medium tracking-tight hover:text-accent transition-colors">
-              <Icons.Instagram size={18}/> Подписаться · 12.4K
+              <Icons.Instagram size={18}/> Жазылу · 12.4K
               <Icons.ArrowUpRight size={16}/>
             </a>
           }
@@ -467,17 +467,17 @@ function MapSection() {
       <Container size="wide">
         <div className="grid lg:grid-cols-12 gap-10 mb-12 items-end">
           <div className="lg:col-span-7">
-            <Reveal><Eyebrow className="mb-5">ГЕОГРАФИЯ ПРОЕКТОВ</Eyebrow></Reveal>
+            <Reveal><Eyebrow className="mb-5">ЖОБАЛАР ГЕОГРАФИЯСЫ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(34px,5vw,64px)] font-medium leading-[0.98] tracking-tightest">
-                5000+ фасадов<br/>по всему район Бейнеу
+                Бейнеу ауданы бойынша<br/>5000-нан астам фасад
               </h2>
             </Reveal>
           </div>
           <div className="lg:col-span-5">
             <Reveal delay={140}>
               <p className="text-[15.5px] leading-[1.65] text-ink-500">
-                Карта наших объектов охватывает все районы города и пригородные посёлки. Большинство проектов сосредоточено в центре и премиальных коттеджных зонах.
+                Біздің нысандар картасы қаланың барлық ауданы мен қала маңы кенттерін қамтиды. Жобалардың көпшілігі орталық пен премиум коттедж аймақтарында шоғырланған.
               </p>
             </Reveal>
           </div>
@@ -516,7 +516,7 @@ function MapSection() {
                   </span>
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 mt-2 px-3 py-1.5 rounded-full bg-ink-900 text-white text-[11px] font-mono uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-                  {p.label} · {p.count} объектов
+                  {p.label} · {p.count} нысан
                 </div>
               </div>
             ))}
@@ -524,11 +524,11 @@ function MapSection() {
               <Icons.Compass size={28} className="text-ink-700"/>
             </div>
             <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur border border-ink-200 rounded-2xl p-4 text-[12px] font-mono uppercase tracking-wider text-ink-600">
-              <div className="flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-accent"/> Наш объект</div>
-              <div className="flex items-center gap-2 mt-2"><span className="h-1 w-5 bg-accent"/> р. Урал</div>
+              <div className="flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-accent"/> Біздің нысан</div>
+              <div className="flex items-center gap-2 mt-2"><span className="h-1 w-5 bg-accent"/> Жайық өз.</div>
             </div>
             <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur border border-ink-200 rounded-2xl px-5 py-3 text-[12px] font-mono uppercase tracking-wider text-ink-600">
-              район Бейнеу · масштаб 1:25 000
+              Бейнеу ауданы · масштаб 1:25 000
             </div>
           </div>
         </Reveal>
@@ -549,28 +549,28 @@ function FinalCTASection({ onOpenConsult }) {
             <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/70 to-transparent"/>
           </div>
           <div className="relative max-w-2xl">
-            <Reveal><Eyebrow dark className="mb-6">ПОРА НАЧАТЬ</Eyebrow></Reveal>
+            <Reveal><Eyebrow dark className="mb-6">БАСТАУ УАҚЫТЫ</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h2 className="display text-[clamp(40px,6.4vw,84px)] font-medium leading-[0.96] tracking-tightest">
-                Замер фасада<br/><span className="text-gold-light italic font-light">бесплатно</span>
+                Фасад өлшеу<br/><span className="text-gold-light italic font-light">тегін</span>
               </h2>
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-7 text-[17px] leading-[1.6] text-white/75 max-w-lg">
-                Архитектор приедет на объект, обсудит материалы и подготовит прозрачную смету в течение трёх рабочих дней.
+                Сәулетші нысанға келеді, материалдарды талқылайды және үш жұмыс күні ішінде мөлдір смета дайындайды.
               </p>
             </Reveal>
             <Reveal delay={240}>
               <div className="mt-10 flex flex-wrap gap-3">
-                <Button onClick={onOpenConsult} variant="invert" size="lg">Вызвать замерщика</Button>
+                <Button onClick={onOpenConsult} variant="invert" size="lg">Өлшеуші шақыру</Button>
                 <Button href="https://wa.me/77716029494" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp</Button>
               </div>
             </Reveal>
             <Reveal delay={320}>
               <div className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
-                <div><Icons.Clock size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">Ответ за 15 минут</div></div>
-                <div><Icons.Ruler size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">Бесплатный замер</div></div>
-                <div><Icons.Shield size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">Без обязательств</div></div>
+                <div><Icons.Clock size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">15 минутта жауап</div></div>
+                <div><Icons.Ruler size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">Тегін өлшеу</div></div>
+                <div><Icons.Shield size={20} className="text-gold-light mb-2"/><div className="text-[13px] text-white/80">Міндеттемесіз</div></div>
               </div>
             </Reveal>
           </div>

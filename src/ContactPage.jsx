@@ -10,17 +10,17 @@ function ContactPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-8">
-              <Reveal><Eyebrow className="mb-5">КОНТАКТЫ</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-5">БАЙЛАНЫС</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h1 className="display text-[clamp(48px,7.6vw,128px)] font-medium leading-[0.94] tracking-tightest">
-                  Давайте <span className="text-gold italic font-light">поговорим</span>
+                  <span className="text-gold italic font-light">Сөйлесейік</span>
                 </h1>
               </Reveal>
             </div>
             <div className="lg:col-span-4">
               <Reveal delay={140}>
                 <p className="text-[16px] leading-[1.65] text-ink-500">
-                  Среднее время ответа в WhatsApp — 7 минут. Архитектор студии согласует удобное время визита и подготовит расчёт фасада.
+                  WhatsApp-тағы орташа жауап уақыты — 7 минут. Студия сәулетшісі ыңғайлы келу уақытын келіседі және фасад есебін дайындайды.
                 </p>
               </Reveal>
             </div>
@@ -45,13 +45,13 @@ function ContactPage({ navigate, onOpenConsult }) {
                 <div className="lg:col-span-8">
                   <div className="eyebrow text-white/70 mb-5">
                     <span className="h-px w-8 bg-white/50 inline-block align-middle mr-3"/>
-                    ОСНОВНОЙ КАНАЛ СВЯЗИ
+                    НЕГІЗГІ БАЙЛАНЫС АРНАСЫ
                   </div>
                   <h2 className="display text-[clamp(36px,5.6vw,76px)] font-medium leading-[0.96] tracking-tightest mb-6">
-                    Напишите нам<br/>в WhatsApp
+                    WhatsApp-та<br/>бізге жазыңыз
                   </h2>
                   <p className="text-[17px] leading-[1.6] text-white/85 max-w-xl">
-                    Все консультации, замеры и расчёты — через WhatsApp. Так быстрее: вы можете сразу прислать фотографии объекта, замеры, референсы.
+                    Барлық кеңестер, өлшеулер мен есептер — WhatsApp арқылы. Бұл жылдамырақ: нысанның фотосуреттерін, өлшемдерін, референстерін бірден жіберуге болады.
                   </p>
                   <div className="mt-10 inline-flex items-center gap-4 bg-white text-ink-900 rounded-full pl-3 pr-7 h-16 group-hover:gap-5 transition-all duration-500">
                     <span className="h-11 w-11 rounded-full bg-[#25D366] text-white flex items-center justify-center">
@@ -62,9 +62,9 @@ function ContactPage({ navigate, onOpenConsult }) {
                   </div>
                 </div>
                 <div className="lg:col-span-4 grid grid-cols-3 lg:grid-cols-1 gap-3 text-white">
-                  <WAstat label="Время ответа" value="7 мин"/>
-                  <WAstat label="Доступно"     value="Пн — Сб"/>
-                  <WAstat label="Часы"         value="09:00 — 18:00"/>
+                  <WAstat label="Жауап уақыты" value="7 мин"/>
+                  <WAstat label="Қолжетімді"   value="Дс — Сн"/>
+                  <WAstat label="Сағат"         value="09:00 — 18:00"/>
                 </div>
               </div>
             </a>
@@ -78,7 +78,7 @@ function ContactPage({ navigate, onOpenConsult }) {
           <Reveal>
             <div className="text-[12px] font-mono uppercase tracking-[0.16em] text-ink-500 mb-6">
               <span className="h-px w-8 bg-ink-300 inline-block align-middle mr-3"/>
-              ДРУГИЕ СПОСОБЫ СВЯЗИ
+              БАЙЛАНЫСУДЫҢ БАСҚА ЖОЛДАРЫ
             </div>
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -86,14 +86,14 @@ function ContactPage({ navigate, onOpenConsult }) {
               icon={<Icons.Phone size={22}/>}
               label="ТЕЛЕФОН"
               value="+7 771 602 94-94"
-              hint="Ежедневно 09:00 — 21:00"
+              hint="Күн сайын 09:00 — 21:00"
               href="tel:+77716029494"
             />
             <ContactCard
               icon={<Icons.Mail size={22}/>}
               label="ПОЧТА"
               value="info@manasstroi.kz"
-              hint="Для проектной документации"
+              hint="Жобалық құжаттама үшін"
               href="mailto:info@manasstroi.kz"
             />
             <ContactCard
@@ -116,19 +116,19 @@ function ContactPage({ navigate, onOpenConsult }) {
                   <SchematicMap/>
                 </div>
                 <div className="p-8 md:p-10 flex-1 flex flex-col">
-                  <Eyebrow dark className="mb-4">ОФИС И ПРОИЗВОДСТВО</Eyebrow>
+                  <Eyebrow dark className="mb-4">ОФИС ЖӘНЕ ӨНДІРІС</Eyebrow>
                   <h3 className="display text-[28px] md:text-[32px] font-medium tracking-tight leading-tight mb-6">
                     Бейнеу, ул. Улица Майлина, 168
                   </h3>
                   <div className="space-y-5 text-[14.5px]">
-                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Адрес офиса"  value="район Бейнеу, ул. Улица Майлина, 168"/>
-                    <ContactLine icon={<Icons.Building size={16}/>} label="Производство" value="район Бейнеу, ул. Улица Майлина, 168"/>
-                    <ContactLine icon={<Icons.Clock size={16}/>}    label="Часы работы"  value="Пн — Сб · 09:00 — 18:00"/>
-                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"      value="+7 771 602 94-94"/>
+                    <ContactLine icon={<Icons.MapPin size={16}/>}   label="Офис мекенжайы" value="район Бейнеу, ул. Улица Майлина, 168"/>
+                    <ContactLine icon={<Icons.Building size={16}/>} label="Өндіріс"        value="район Бейнеу, ул. Улица Майлина, 168"/>
+                    <ContactLine icon={<Icons.Clock size={16}/>}    label="Жұмыс сағаты"  value="Дс — Сн · 09:00 — 18:00"/>
+                    <ContactLine icon={<Icons.Phone size={16}/>}    label="Телефон"        value="+7 771 602 94-94"/>
                   </div>
                   <div className="mt-auto pt-8 grid grid-cols-2 gap-3">
                     <Button href={WA_URL} as="a" variant="whatsapp" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
-                    <Button href="tel:+77716029494" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Позвонить</Button>
+                    <Button href="tel:+77716029494" as="a" variant="invert_dark" size="md" icon={<Icons.Phone size={15}/>} iconAfter={null}>Қоңырау шалу</Button>
                   </div>
                 </div>
               </div>
@@ -136,10 +136,10 @@ function ContactPage({ navigate, onOpenConsult }) {
 
             <Reveal className="lg:col-span-7" delay={120}>
               <div className="h-full flex flex-col gap-4 md:gap-6">
-                <ServiceRow number="01" title="Получить консультацию" text="Архитектор студии ответит на вопросы по фасадным системам, материалам и срокам." cta="Написать в WhatsApp"/>
-                <ServiceRow number="02" title="Вызвать замерщика"     text="Бесплатный выезд по Бейнеу. Замер фасада, фотофиксация и обсуждение материалов на объекте." cta="Написать в WhatsApp"/>
-                <ServiceRow number="03" title="Рассчитать стоимость"  text="Прозрачная смета с детализацией по материалам и работам в течение 3 рабочих дней." cta="Написать в WhatsApp"/>
-                <ServiceRow number="04" title="Проект фасада"         text="Архитектурный проект с визуализацией и подбором материалов. От 7 рабочих дней." cta="Написать в WhatsApp"/>
+                <ServiceRow number="01" title="Кеңес алу"            text="Студия сәулетшісі фасадтық жүйелер, материалдар мен мерзімдер туралы сұрақтарға жауап береді." cta="WhatsApp-қа жазу"/>
+                <ServiceRow number="02" title="Өлшеуші шақыру"       text="Бейнеу бойынша тегін шығу. Фасадты өлшеу, фотофиксация және нысанда материалдарды талқылау." cta="WhatsApp-қа жазу"/>
+                <ServiceRow number="03" title="Құнын есептеу"         text="Материалдар мен жұмыстар бойынша 3 жұмыс күні ішінде детализациясы бар мөлдір смета." cta="WhatsApp-қа жазу"/>
+                <ServiceRow number="04" title="Фасад жобасы"          text="Визуализация және материалдарды іріктеумен сәулеттік жоба. 7 жұмыс күнінен бастап." cta="WhatsApp-қа жазу"/>
               </div>
             </Reveal>
           </div>
@@ -153,12 +153,12 @@ function ContactPage({ navigate, onOpenConsult }) {
             <div className="relative rounded-[28px] overflow-hidden border border-ink-200 bg-white" style={{ aspectRatio: '21/9' }}>
               <BigSchematicMap/>
               <div className="absolute top-6 left-6 bg-white rounded-2xl border border-ink-200 shadow-soft p-5 max-w-xs">
-                <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">МЫ ЗДЕСЬ</div>
+                <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">БІЗ ОСЫНДАМЫЗ</div>
                 <div className="display text-[18px] font-medium mb-1">Манас Строй</div>
                 <div className="text-[13px] text-ink-500 leading-relaxed">ул. Улица Майлина, 168<br/>район Бейнеу, Казахстан</div>
                 <div className="mt-3 pt-3 border-t border-ink-100 flex items-center gap-3 text-[13px]">
                   <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline flex items-center gap-1.5">
-                    <Icons.WhatsApp size={14}/> Написать
+                    <Icons.WhatsApp size={14}/> Жазу
                   </a>
                   <span className="text-ink-200">·</span>
                   <a href="tel:+77716029494" className="text-accent hover:text-accent-dark">+7 771 602 94-94</a>
@@ -173,9 +173,9 @@ function ContactPage({ navigate, onOpenConsult }) {
       <Section className="py-20 md:py-28 bg-white">
         <Container size="wide">
           <div className="grid md:grid-cols-3 gap-8">
-            <QuickInfo icon="Clock"  title="Среднее время ответа"  text="7 минут в рабочее время. Сообщения вне часов обрабатываются с 09:00."/>
-            <QuickInfo icon="Ruler"  title="Замер фасада"           text="Бесплатно в Бейнеу. Для объектов от 200 м² — выезд по Бейнеуской области."/>
-            <QuickInfo icon="Shield" title="Без обязательств"       text="Консультация и расчёт стоимости не накладывают финансовых обязательств."/>
+            <QuickInfo icon="Clock"  title="Орташа жауап уақыты"  text="Жұмыс уақытында 7 минут. Сағаттан тыс хабарламалар 09:00-ден өңделеді."/>
+            <QuickInfo icon="Ruler"  title="Фасад өлшеу"          text="Бейнеуда тегін. 200 м²-ден бастап нысандар үшін — Бейнеу облысы бойынша шығу."/>
+            <QuickInfo icon="Shield" title="Міндеттемесіз"         text="Кеңес және құнын есептеу қаржылық міндеттемелер жүктемейді."/>
           </div>
         </Container>
       </Section>

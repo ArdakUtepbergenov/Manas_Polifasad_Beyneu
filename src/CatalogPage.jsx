@@ -21,17 +21,17 @@ function CatalogPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-8">
-              <Reveal><Eyebrow className="mb-5">КАТАЛОГ · {String(CATALOG.length).padStart(2,'0')} ПОЗИЦИЙ</Eyebrow></Reveal>
+              <Reveal><Eyebrow className="mb-5">КАТАЛОГ · {String(CATALOG.length).padStart(2,'0')} ПОЗИЦИЯ</Eyebrow></Reveal>
               <Reveal delay={80}>
                 <h1 className="display text-[clamp(48px,7.6vw,128px)] font-medium leading-[0.94] tracking-tightest">
-                  Материалы для<br/>премиальных <span className="text-gold italic font-light">фасадов</span>
+                  Премиум<br/><span className="text-gold italic font-light">фасадтарға</span> арналған материалдар
                 </h1>
               </Reveal>
             </div>
             <div className="lg:col-span-4">
               <Reveal delay={140}>
                 <p className="text-[16px] leading-[1.65] text-ink-500">
-                  Термопанели, декоративные панели, утеплённые системы и архитектурный декор. Все позиции сертифицированы и адаптированы под климат района Бейнеу.
+                  Термопанельдер, декоративтік панельдер, жылытылған жүйелер және сәулеттік декор. Барлық позициялар сертификатталған және Бейнеу ауданының климатына бейімделген.
                 </p>
               </Reveal>
             </div>
@@ -43,7 +43,7 @@ function CatalogPage({ navigate, onOpenConsult }) {
       <div className="md:sticky md:top-[84px] z-20 glass border-b border-ink-100">
         <Container size="wide" className="py-4 flex flex-wrap items-center gap-3 md:gap-5">
           <div className="flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.16em] text-ink-500">
-            <Icons.Filter size={14}/> Фильтры
+            <Icons.Filter size={14}/> Сүзгілер
           </div>
           <div className="flex flex-wrap gap-2">
             {CATALOG_CATEGORIES.map(c => (
@@ -81,7 +81,7 @@ function CatalogPage({ navigate, onOpenConsult }) {
       <div className="bg-ink-50">
         <Container size="wide" className="py-6 flex items-center justify-between">
           <div className="text-[14px] text-ink-500">
-            Показано <span className="text-ink-900 font-medium">{items.length}</span> из {CATALOG.length} позиций
+            Көрсетілген <span className="text-ink-900 font-medium">{items.length}</span> / {CATALOG.length} позиция
           </div>
           <div/>
         </Container>
@@ -92,9 +92,9 @@ function CatalogPage({ navigate, onOpenConsult }) {
         <Container size="wide">
           {items.length === 0 ? (
             <div className="py-32 text-center">
-              <p className="display text-2xl font-medium mb-3">Ничего не найдено</p>
-              <p className="text-ink-500 mb-6">Попробуйте изменить фильтры</p>
-              <Button onClick={() => { setCat('all'); setColor('all'); }} variant="primary" size="md">Сбросить фильтры</Button>
+              <p className="display text-2xl font-medium mb-3">Ештеңе табылмады</p>
+              <p className="text-ink-500 mb-6">Сүзгілерді өзгертіп көріңіз</p>
+              <Button onClick={() => { setCat('all'); setColor('all'); }} variant="primary" size="md">Сүзгілерді тазалау</Button>
             </div>
           ) : view === 'grid' ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -151,7 +151,7 @@ function ProductCard({ product, onOpen }) {
           <p className="text-[13.5px] text-ink-500 leading-relaxed mb-5">{product.spec}</p>
           <div className="flex items-center justify-end pt-4 border-t border-ink-100">
             <span className="text-[13px] text-ink-500 group-hover:text-ink-900 transition-colors flex items-center gap-2">
-              Подробнее
+              Толығырақ
               <Icons.ArrowRight size={14} className="transition-transform group-hover:translate-x-1"/>
             </span>
           </div>
@@ -220,10 +220,10 @@ function ProductModal({ product, onClose, onOpenConsult }) {
 
             <div className="grid grid-cols-2 gap-px bg-ink-100 border border-ink-100 rounded-2xl overflow-hidden mb-8">
               {[
-                { label: 'Цвет',              value: product.colorLabel },
-                { label: 'Спецификация',       value: product.spec },
-                { label: 'Минимальный заказ',  value: '8 м²' },
-                { label: 'Срок производства',  value: '14–21 день' },
+                { label: 'Түс',                   value: product.colorLabel },
+                { label: 'Спецификация',         value: product.spec },
+                { label: 'Ең төменгі тапсырыс', value: '8 м²' },
+                { label: 'Өндіру мерзімі',       value: '14–21 күн' },
               ].map((s, i) => (
                 <div key={i} className="bg-white p-5">
                   <div className="text-[11px] font-mono uppercase tracking-[0.14em] text-ink-400 mb-1">{s.label}</div>
@@ -233,7 +233,7 @@ function ProductModal({ product, onClose, onOpenConsult }) {
             </div>
 
             <div className="mb-8">
-              <div className="eyebrow text-ink-500 mb-4">ОСОБЕННОСТИ</div>
+              <div className="eyebrow text-ink-500 mb-4">ЕРЕКШЕЛІКТЕР</div>
               <ul className="space-y-3">
                 {product.features.map((f, i) => (
                   <li key={i} className="flex items-start gap-3 text-[14.5px]">
@@ -246,7 +246,7 @@ function ProductModal({ product, onClose, onOpenConsult }) {
 
             <div className="pt-8 border-t border-ink-100 flex items-end justify-end gap-6 flex-wrap">
               <div className="flex gap-2 flex-wrap">
-                <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Рассчитать стоимость</Button>
+                <Button onClick={() => { onClose(); onOpenConsult(); }} variant="primary" size="md">Құнын есептеу</Button>
                 <Button href="https://wa.me/77716029494" as="a" variant="outline" size="md" icon={<Icons.WhatsApp size={15}/>} iconAfter={null}>WhatsApp</Button>
               </div>
             </div>
@@ -264,22 +264,22 @@ function CatalogCTA({ onOpenConsult }) {
       <Container size="wide">
         <Card className="p-10 md:p-16 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
-            <Reveal><Eyebrow className="mb-5">НЕ НАШЛИ НУЖНОЕ?</Eyebrow></Reveal>
+            <Reveal><Eyebrow className="mb-5">ҚАЖЕТІН ТАППАДЫҢЫЗ БА?</Eyebrow></Reveal>
             <Reveal delay={80}>
               <h3 className="display text-[clamp(28px,4vw,48px)] font-medium leading-tight tracking-tight">
-                Подберём фасад под ваш<br/>архитектурный проект.
+                Сіздің сәулеттік жобаңызға<br/>фасад таңдаймыз.
               </h3>
             </Reveal>
             <Reveal delay={140}>
               <p className="mt-5 text-[15.5px] text-ink-500 max-w-xl leading-[1.65]">
-                Расскажите задачу — мы предложим систему, рассчитаем теплотехнику и подготовим визуализацию фасада.
+                Тапсырманы айтыңыз — біз жүйені ұсынамыз, жылутехниканы есептейміз және фасадтың визуализациясын дайындаймыз.
               </p>
             </Reveal>
           </div>
           <div className="lg:col-span-5 flex flex-col gap-3">
-            <Button onClick={onOpenConsult} variant="primary" size="lg">Получить консультацию</Button>
-            <Button onClick={onOpenConsult} variant="outline" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Вызвать замерщика</Button>
-            <Button href="https://wa.me/77027095654" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>Написать в WhatsApp</Button>
+            <Button onClick={onOpenConsult} variant="primary" size="lg">Кеңес алу</Button>
+            <Button onClick={onOpenConsult} variant="outline" size="lg" iconAfter={<Icons.Ruler size={16}/>}>Өлшеуші шақыру</Button>
+            <Button href="https://wa.me/77027095654" as="a" variant="whatsapp" size="lg" icon={<Icons.WhatsApp size={17}/>} iconAfter={null}>WhatsApp-қа жазу</Button>
           </div>
         </Card>
       </Container>
